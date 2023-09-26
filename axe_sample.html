@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Test Page</title>
+</head>
+<body>
+    <h1>Accessibility Test Page</h1>
+
+    <!-- Issue 1: Missing alt attribute for image -->
+    <img src="example.jpg" width="200" height="150" alt="">
+
+    <p>This is a test page with accessibility issues.</p>
+
+    <!-- Issue 2: Inadequate link text -->
+    <a href="#">Click here</a>
+
+    <!-- Issue 3: Missing label for form input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <!-- Issue 4: Low color contrast -->
+    <p style="color: #999;">This text has low color contrast.</p>
+
+    <!-- Issue 5: Non-semantic HTML element used for button -->
+    <div style="background-color: #007bff; color: #fff; padding: 10px; cursor: pointer;">Click me</div>
+
+    <!-- Issue 6: Incorrect use of headings -->
+    <p><strong>Important Note:</strong></p>
+    <p>This is not a proper heading.</p>
+
+    <!-- Issue 7: Missing alternative text for icon fonts -->
+    <i class="fas fa-envelope"></i>
+
+    <!-- Issue 8: No skip to content link -->
+    <a href="#content">Skip to content</a>
+
+    <div id="content">
+        <h2>Main Content</h2>
+        <p>This is the main content of the page.</p>
+    </div>
+
+    <!-- Issue 9: Form controls not grouped with fieldset and legend -->
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Issue 10: Tables without proper headers -->
+    <table border="1">
+        <tr>
+            <td>Product Name</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>Product 1</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>Product 2</td>
+            <td>$15</td>
+        </tr>
+    </table>
+</body>
+</html>
+
